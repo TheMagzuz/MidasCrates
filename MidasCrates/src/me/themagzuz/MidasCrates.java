@@ -252,7 +252,7 @@ public class MidasCrates extends JavaPlugin{
 				}
 			} else if (args[0].equalsIgnoreCase("crateobj")){
 				CrateObject crate = new CrateObject("test");
-				crate.AddWinning(new ItemStack(Material.DIAMOND), "Diamond");
+				crate.AddWinning(new Chance(100, new ItemStack(Material.DIAMOND), "Diamond", new CrateObject("Test")), "Diamond");
 			}
 			else {															
 				player.sendMessage(ChatColor.RED + "Invalid SubCommand!");
