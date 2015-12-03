@@ -1,0 +1,34 @@
+name: MidasCrates
+main: me.themagzuz.MidasCrates
+version: 0.4
+commands:
+   midascrates:
+      description: Main command for MidasCrates
+      usage: /<command> <args>
+   midas:
+      description: Turns the items in your hand to diamonds
+      usage: /<command>
+   itemname:
+      description: Tells you the item name
+      usage: /<command>
+   crate:
+      description: Gives you a random item
+      usage: /<command>
+   key:
+      description: Gives you a key for a crate
+      usage: /<command> [player] [amount] 
+   crateinterface:
+      description: Opens the crate interface
+      usage: /<command> 
+   addcrate:
+      description: Adds an item to the crate interface
+      usage: /<command> [item]
+   getchances:
+      description: Prints the chances
+      usage: /<command>
+   addchance:
+      description: Adds a chance
+      usage: /<command> <Location> <Output> <Chance>
+   peng:
+      description: Pings pengusej123
+      usage: /<command>
