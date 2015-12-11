@@ -39,6 +39,8 @@ public class MidasCrates extends JavaPlugin{
 	
 	public static ChanceComparator compa = new ChanceComparator();
 	
+	protected RecipeHandler recipeHandler;
+	
 	public void LoadConfig(){
 		saveConfig();
 	}
@@ -129,6 +131,10 @@ public class MidasCrates extends JavaPlugin{
 		Crate.InitializeCrateItem();
 		getLogger().info("Initializing Crate Interface");
 		Crate.InitializeCrateInterface();
+		getLogger().info("Initializing Recipe Handler");
+		recipeHandler = new RecipeHandler(this);
+		getLogger().info("Initializing recipies");
+		recipeHandler.SetupRecipes();
 		getLogger().info("Loading Config");
 		LoadConfig();
 		Crate.SetupChance();
