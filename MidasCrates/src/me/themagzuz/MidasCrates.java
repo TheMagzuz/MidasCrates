@@ -120,9 +120,9 @@ public class MidasCrates extends JavaPlugin{
 		getLogger().info("Initializing Plugin Object");
 		pl = this;
 		getLogger().info("Initializing Block Listener");
-		new BlockListener(this);
+		BlockListener blockListener = new BlockListener(pl);
 		getLogger().info("Initializing Player Listener");
-		new PlayerListener(this);
+		new PlayerListener(pl);
 		getLogger().info("Initializing Plugin Manager");
 		PluginManager pm = getServer().getPluginManager();
 		getLogger().info("Initializing data for the key item");
@@ -155,7 +155,7 @@ public class MidasCrates extends JavaPlugin{
 			pl.getConfig().set("Main.CrateCount", CrateCount);
 		}*/
 		
-		SetCrates();
+		pl.SetCrates();
 		
 	}
 

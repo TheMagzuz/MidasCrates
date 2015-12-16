@@ -26,7 +26,9 @@ import org.bukkit.inventory.ItemStack;
 
 public class PlayerListener implements Listener {
 	public PlayerListener(MidasCrates plugin){
+		
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);
+		
 	}
 	
 	@EventHandler
